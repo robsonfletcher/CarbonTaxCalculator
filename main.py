@@ -61,7 +61,7 @@ app.layout = html.Div([
     html.Div([
         html.Label('How many dependent children do you have?'),
         html.Br(),
-        dcc.Input(id='num-children-input', type='number', value=0)
+        dcc.Input(id='num-children-input', type='number', value=0, min=0)
     ], style={'marginLeft': 15}),
     html.Br(),
     html.Div([
@@ -82,7 +82,7 @@ app.layout = html.Div([
     html.Div([
         html.Label('Gasoline (L / month):'),
         html.Br(),
-        dcc.Input(id='gasoline-input', type='number', value=0),
+        dcc.Input(id='gasoline-input', type='number', value=0, min=0),
         html.Br(),
         html.Small('Most vehicles take between 45 and 65 L to fill. A typical fill-up is about 50 L.',
                    style={'font-style': 'italic'}),
@@ -92,7 +92,7 @@ app.layout = html.Div([
     html.Div([
         html.Label('Diesel (L / month):'),
         html.Br(),
-        dcc.Input(id='diesel-input', type='number', value=0),
+        dcc.Input(id='diesel-input', type='number', value=0, min=0),
         html.Br(),
         html.Small('Mid-size pickups typically take about 80 L to fill. Full-size pickups, 100 L or more.',
                    style={'font-style': 'italic'}),
@@ -102,7 +102,7 @@ app.layout = html.Div([
     html.Div([
         html.Label('Natural gas (GJ / month):'),
         html.Br(),
-        dcc.Input(id='natural-gas-input', type='number', value=0),
+        dcc.Input(id='natural-gas-input', type='number', value=0, min=0),
         html.Br(),
         html.Small('A typical Canadian household uses about 8 GJ per month, on average, over the course of a year.',
                    style={'font-style': 'italic'}),
@@ -112,7 +112,7 @@ app.layout = html.Div([
     html.Div([
         html.Label('Propane (L / month):'),
         html.Br(),
-        dcc.Input(id='propane-input', type='number', value=0),
+        dcc.Input(id='propane-input', type='number', value=0, min=0),
         html.Br(),
         html.Small('A 20-lb propane tank (BBQ size) holds about 18 L of liquid propane.',
                    style={'font-style': 'italic'}),
