@@ -134,6 +134,7 @@ app.layout = html.Div([
     html.Br(),
     html.Label('• Calculations are based on a carbon tax rate of $65 per tonne, which takes effect April 1, 2023.',
                style={'marginLeft': 15}),
+    html.Br(),
     html.Label('• Payments are issued quarterly: In April, July & October of 2023 and in January 2024.',
                style={'marginLeft': 15}),
     html.Br(),
