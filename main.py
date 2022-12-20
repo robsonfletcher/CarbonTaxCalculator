@@ -58,6 +58,11 @@ app.layout = html.Div([
             value='one'
         )
     ], style={'marginLeft': 15}),
+    html.Small(
+        '"Household", in this context, refers to your immediate family (i.e. a tax-filing household).',
+        style={'font-style': 'italic',
+               'marginLeft': 15}),
+    html.Br(),
     html.Br(),
     html.Div([
         html.Label('How many dependent children do you have?'),
